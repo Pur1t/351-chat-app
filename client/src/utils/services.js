@@ -11,8 +11,6 @@ export const postRequest = async (url, body) => {
 
   const data = await response.json();
 
-  console.log("data", data);
-
   if (!response.ok) {
     let message;
 
@@ -24,6 +22,15 @@ export const postRequest = async (url, body) => {
 
     return { error: true, message };
   }
+
+  console.log(
+    ` POST Method : httpStatus ${response.status}, ` +
+      " " +
+      `statusText ${response.statusText}, ` +
+      " " +
+      `${response.url}`
+  );
+
   return data;
 };
 
@@ -40,6 +47,14 @@ export const getRequest = async (url) => {
 
     return {error: true, message};
   }
+
+  console.log(
+    ` GET Method : httpStatus ${response.status}, ` +
+      " " +
+      `statusText ${response.statusText}, ` +
+      " " +
+      `${response.url}`
+  );
 
   return data;
 };
