@@ -2,8 +2,6 @@
 
 <p align="center"><img src="https://socialify.git.ci/Pur1t/351-chat-app/image?description=1&amp;name=1&amp;owner=1&amp;pattern=Plus&amp;theme=Dark" alt="project-image"></p>
 
-<h2>🚀 Demo</h2>
-
 <h2>Project Screenshots:</h2>
 
 <img src="https://cdn.discordapp.com/attachments/397365903202975756/1207351535550603274/2567-02-14_22.42.47.png?ex=65df54bd&amp;is=65ccdfbd&amp;hm=97464c5896ecf6b036734923e5a97d4c8bbf9fd31ea3ba08517e22547588542e&amp;" alt="project-screenshot" width="2000" height="400/">
@@ -12,13 +10,13 @@
 
 <p>1. Clone the Repository</p>
 
-```
+```bash
 git clone https://github.com/Pur1t/351-chat-app.git
 ```
 
 <p>2. install dependency ต่างๆ ของ client server และ socket</p>
 
-```
+```bash
 cd 351-chat-app/client 
 npm install
 
@@ -31,7 +29,7 @@ npm install
 
 <p>3. แก้ไขไฟล์ .env</p>
 
-```
+```bash
 cd 351-chat-app/server
 cp .env.example .env
 
@@ -44,7 +42,7 @@ JWT_SECRET_KEY = {YOUR_SECRET_KEY}
 
 <p>4. การรัน App</p>
 
-```
+```bash
 cd 351-chat-app/server
 node index.js
 
