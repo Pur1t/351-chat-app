@@ -19,7 +19,7 @@ export const ChatContextProvider =  ({ children, user }) => {
   const [onlineUsers, setOnlineUsers] = useState([]);
   const [notifications, setNotifications] = useState([]);
 
-  console.log("notifications", notifications);
+  // console.log("notifications", notifications);
 
   useEffect(() => {
     const newSocket = io("http://localhost:3000");

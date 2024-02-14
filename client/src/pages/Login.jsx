@@ -215,7 +215,7 @@ const Login = () => {
               <a href="#">Forget password?</a>
             </div>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" onClick={loginError?.error}>
               {isLoginLoading ? "Getting you in..." : "Login"}
             </Button>
             {loginError?.error && (
