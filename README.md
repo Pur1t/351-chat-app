@@ -10,13 +10,13 @@
 
 <p>1. Clone the Repository</p>
 
-```
+```bash
 git clone https://github.com/Pur1t/351-chat-app.git
 ```
 
 <p>2. install dependency ต่างๆ ของ client server และ socket</p>
 
-```
+```bash
 cd 351-chat-app/client 
 npm install
 
@@ -29,7 +29,7 @@ npm install
 
 <p>3. แก้ไขไฟล์ .env</p>
 
-```
+```bash
 cd 351-chat-app/server
 cp .env.example .env
 
@@ -42,7 +42,7 @@ JWT_SECRET_KEY = {YOUR_SECRET_KEY}
 
 <p>4. การรัน App</p>
 
-```
+```bash
 cd 351-chat-app/server
 node index.js
 
